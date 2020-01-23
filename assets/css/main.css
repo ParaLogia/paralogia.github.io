@@ -1991,12 +1991,12 @@ input, select, textarea {
 		flex-wrap: wrap;
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		background: rgba(102, 98, 98, 0.05);
 		margin: 0 0 2em 0;
 	}
 
 		.features section {
-			padding: 3.5em 1em 2em;
+			padding: 3.2em 1em 1em;
 			width: 100%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
@@ -2494,6 +2494,30 @@ input, select, textarea {
 	}
 
 /* Icon */
+
+	.icon-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin: 0 1em 2em;
+	}
+
+		.icon-wrapper label {
+			font-size: 16px;
+			position: absolute;
+			bottom: -2.2em;
+			color: rgba(255,255,255,0.5);
+			transition: color 0.5s;
+		}
+
+		.features section:hover label {
+			color: rgba(255,255,255,0.75);
+		}
+
+		.features section .icon-wrapper:hover label {
+			color: rgba(255,255,255,0.9);
+		}
 
 	.icon {
 		text-decoration: none;
