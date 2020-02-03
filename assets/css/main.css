@@ -3949,3 +3949,14 @@ input, select, textarea {
 			}
 
 		}
+
+	.photo {
+		max-width: 100%;
+		border-radius: 50%;
+		filter: saturate(78%) contrast(90%);
+		transition: filter .3s;
+	}
+
+	.photo:hover {
+		filter: saturate(86%) contrast(93%);
+	}
