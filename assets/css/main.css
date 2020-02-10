@@ -1314,6 +1314,7 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+				flex-direction: column-reverse;
 			}
 
 				.row > * {
@@ -3091,6 +3092,7 @@ input, select, textarea {
 			justify-content: center;
 			width: 50em;
 			-ms-flex: 1;
+			flex: 1;
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3926,6 +3928,11 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+		#intro span {
+			display: inline-block;
+			margin: -1em 0 2.25em;
+		}
+
 			@media screen and (max-width: 980px) {
 
 				#intro p br {
@@ -3940,6 +3947,10 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
+				#intro span {					
+					font-size: 0.8em;
+				}
+
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3951,10 +3962,12 @@ input, select, textarea {
 		}
 
 	.photo {
-		max-width: 100%;
+		width: 100%;
+		max-width: 18em;
 		border-radius: 50%;
 		filter: saturate(78%) contrast(90%);
 		transition: filter .3s;
+		margin: 0 auto;
 	}
 
 	.photo:hover {
